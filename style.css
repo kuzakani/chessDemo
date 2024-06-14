@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+--color-one   : #ffffffd9;
+--color-two   : #81b64c;
+--color-three : #7c2929;
+--color-four  : #302e2b;
+--color-five  : #00000033;
+--color-six   : #000000;
+--color-seven : #8b8987;
+--color-eight : #312e2b;
+}
+
+body {
+    background-color: var(--color-four);
+}
+
+.page {
+    display: flex;
+    width: 100%;
+}
+
+/* ================================ Side NavBar ===================================*/
+
+.sideNav {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 150px;
+    background-color: var(--color-five);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    padding: 3px 0px 3px 20px;
+}
+
+.index img {
+    margin-top: 5px;
+}
+
+.item:hover , .logo:hover {
+    background-color: #08080833;
+}
+
+.searchUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: #c6c1be;
+}
+
+input {
+    padding: 6px 8px;
+    border: 1px solid #4d4b49;
+    width: 85%;
+    border-radius: 4px;
+    background-color:  #383735;
+    color: #c6c1be;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+
+input:hover {
+    border: 1px solid var(--color-seven);
+}
+
+input:focus {
+    outline: none;
+}
+
+.signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+
+.sgnUp {
+    padding: 8px 8px;
+    width: 85%;
+    border-radius: 4px;
+    border: none;
+    background-color:  #383735;
+    color: #c6c1be;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sgnUp:hover {
+    background-color: #454442;
+}
+
+.logIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+
+.login {
+     padding: 8px 8px;
+    width: 85%;
+    border-radius: 4px;
+    border: none;
+    background-color:  var(--color-two);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login:hover {
+    background-color: #9dd764;
+}
+
+.language, .assistance {
+     display: flex;
+    gap: 10px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    padding: 3px 0px 3px 20px;
+}
+
+.setting, .help {
+    margin-top: 5px;
+}
+
+
+/* ============================================ Right Side ==================================================*/
+
+.rightSide {
+    width: 100%;
+    height: fit-content;
+}
+
+.board-cta {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2.5rem 3.5rem;
+    grid-gap: 10px;
+}
+
+.board img {
+    border-radius: 4px;
+}
+
+.cta {
+    display: grid;
+    grid-template-rows: 220px 50px 96px 100px;
+    
+}
+
+.cta h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.9rem;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+.games-users {
+    display: flex;
+    justify-content: center;
+    color: #c6c1be;
+}
+
+.currentInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    
+}
+
+.gamesCount :nth-child(1) {
+    font-weight: 700;
+    color: white;
+}
+
+.usersCount :nth-child(1) {
+    font-weight: 700;
+    color: white;
+}
+
+.ctaButton {
+ display: flex;
+ align-items: center;
+ background-color: #81b64c;
+ align-items: center;
+ gap: 20px;
+ width: 80%;
+ border-radius: 10px;
+ box-shadow: inset 0 -5px 0px rgba(78, 76, 76, 0.5);
+ height: 100%;
+
+}
+
+.ctaButton img {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.playRobot {
+ display: flex;
+ justify-content: center;
+ background-color: #383735;
+ align-items: center;
+ gap: 20px;
+ width: 80%;
+ border-radius: 10px;
+ box-shadow: inset 0 -5px 0px rgba(78, 76, 76, 0.5); 
+ height: 100%;
+}
+
+.cta-copy {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta-copy h2{
+    font-size: 2rem;
+    
+}
+
+.playRobot {
+    margin-top: 30px;
+}
+
+.try, .robot-center {
+    display: flex;
+    justify-content: center;
+}
+
+.ctaButton:hover, .playRobot:hover {
+    background-color: #8ed14c;
+} 
+
+.playRobot:hover {
+    background-color: #615d54;
+}
+
+
+
+/* keep the responding layout in your mind even before building  anything  */
